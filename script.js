@@ -1,17 +1,20 @@
-const password = "sayang";
-const music = document.getElementById("music");
+constconst password = "sayang";
+let music;
 
-function checkPassword() {
+function login() {
   const input = document.getElementById("passwordInput").value;
+  music = document.getElementById("music");
 
   if (input === password) {
     document.getElementById("loginPage").classList.remove("active");
     document.getElementById("mainPage").classList.add("active");
 
-    music.play();
+    music.volume = 0.7;
+    music.play().catch(() => {});
+
     startHearts();
   } else {
-    alert("Password salah 😢");
+    alert("Ihh Salahh😢");
   }
 
 function goToFinal() {
