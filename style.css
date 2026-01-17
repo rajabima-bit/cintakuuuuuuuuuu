@@ -215,3 +215,30 @@ button {
     height: 100px;
   }
 }
+/* SOFT CINEMATIC GLOW BACKGROUND */
+body::before {
+  content: "";
+  position: relative;
+  overflow-x: hiden;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left,
+      rgba(255, 182, 193, 0.18),
+      transparent 40%),
+    radial-gradient(circle at bottom right,
+      rgba(221, 160, 221, 0.15),
+      transparent 45%);
+  filter: blur(30px);
+  animation: softGlow 12s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes softGlow {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+
