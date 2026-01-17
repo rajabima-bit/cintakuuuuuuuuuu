@@ -13,10 +13,9 @@ function checkPassword() {
   } else {
     alert("Password salah 😢");
   }
-}
 
-function nextMessage() {
-  document.getElementById("mainPage").classList.remove("active");
+function goToFinal() {
+  document.getElementById("messagePage").classList.remove("active");
   document.getElementById("finalPage").classList.add("active");
 }
 
