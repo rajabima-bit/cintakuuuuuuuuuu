@@ -101,6 +101,32 @@ body {
   margin-bottom: 20px;
 }
 
+/* MIDDLE MESSAGE */
+.message-box {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #fce4ff, #ffb6c1);
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(255,105,180,0.4);
+  animation: fadeIn 1s ease;
+  max-width: 500px;
+}
+
+.message-box h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.message-box p {
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.message-box button {
+  background: #ff6fa5;
+}
+
 button {
   background: #ff8fab;
   color: #fff;
